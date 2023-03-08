@@ -141,6 +141,11 @@ namespace Formulario_4
                         Guid id = Guid.Parse(Request.QueryString["id"]);
                         CargaPrincipalEditar(id);
                     }
+                    else if (Request.QueryString["Fecha"] != null)
+                    {
+                        DateTime fecha = DateTime.Parse(Request.QueryString["Fecha"].ToString());
+                        dtFechaInicio.Text = fecha.ToString("yyyy-MM-dd");
+                    }
                     else
                     {
                         dtFechaInicio.Text = DateTime.Today.ToString("yyyy-MM-dd");

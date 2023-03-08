@@ -215,6 +215,12 @@ function getActiveDaySegment(date, hours) {
 
 }
 
+function SendRequest() {
+    var date = new Date(year, month, activeDay)
+    const dateFormatter = Intl.DateTimeFormat('sv-SE');
+    window.location = 'Principal.aspx?Fecha=' + dateFormatter.format(date);
+}
+
 function putEvents(dia) {
     let events = "";
     $.ajax({

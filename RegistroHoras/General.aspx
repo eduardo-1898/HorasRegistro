@@ -44,7 +44,7 @@
                 </div>
                 <div class="events"></div>
             </div>
-            <a class="add-event" href="Principal.aspx">
+            <a class="add-event" onclick="SendRequest()">
                 <i class="fas fa-plus"></i>
             </a>
         </div>
